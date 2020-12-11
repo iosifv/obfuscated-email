@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Obfuscated Email</title>
+        <link href="https://myCDN.com/prism@v1.x/themes/prism.css" rel="stylesheet" />
+    </head>
+    <body>
+        <p>This is an example of a simple HTML page with one paragraph.</p>
+
+        <pre><code class="language-css">
+            
+            <div class="icon-box" style="color:slategray;">
+                <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
+            </div>
+            <style>
+                #hide::before {
+                    content: 'hi';
+                }
+    
+                #hide::after {
+                    content: ".com\A";
+                }
+    
+                #where::before {
+                    content: "@";
+                }
+    
+                #where::after {
+                    content: "iosifv";
+                }
+            </style>
+            <h5>Email</h5>
+            <a class="button" href="mailto:spamATiosifvDOTcom"
+               onclick="this.href = this.href
+                        .replace(/AT/,'&#64;')
+                        .replace(/DOT/,'&#46;')
+                        .replace(/spam/,'hi')">
+    
+                <p id="hide"><span id="where"></span></p>
+            </a>
+
+        </code></pre>
+
+        <div class="icon-box" style="color:slategray;">
+            <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
+        </div>
+        <style>
+            #hide::before {
+                content: 'hi';
+            }
+
+            #hide::after {
+                content: ".com\A";
+            }
+
+            #where::before {
+                content: "@";
+            }
+
+            #where::after {
+                content: "iosifv";
+            }
+        </style>
+        <h5>Email</h5>
+        <a class="button" href="mailto:spamATiosifvDOTcom"
+           onclick="this.href = this.href
+                    .replace(/AT/,'&#64;')
+                    .replace(/DOT/,'&#46;')
+                    .replace(/spam/,'hi')">
+
+            <p id="hide"><span id="where"></span></p>
+        </a>
+
+        <script src="https://myCDN.com/prism@v1.x/components/prism-core.min.js"></script>
+	    <script src="https://myCDN.com/prism@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
+    </body>
+</html>
